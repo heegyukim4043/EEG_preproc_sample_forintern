@@ -1,3 +1,6 @@
+Main scripts: sample_code_DSI24.m, test_ica.m
+
+
 Requirements
 
     EEGLAB toolbox: used ver. 2022.0 URL: https://sccn.ucsd.edu/eeglab/download.php
