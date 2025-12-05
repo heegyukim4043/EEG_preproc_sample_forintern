@@ -15,4 +15,5 @@
 이후에 epoching 하여 각 bad trial을 visual insepction으로 봐서 제거하면 더 좋음 but 귀찮음
 
 첨부된 .m 파일 참고하여 데이터 돌려보면 좋을듯
-자세한 설명은  https://sccn.ucsd.edu/wiki/Makoto%27s_preprocessing_pipeline  링크참조하면 더  잘알수있음 ㅋ 전문가가 설명 잘 해놓음
+
+자세한 설명은  https://sccn.ucsd.edu/wiki/Makoto%27s_preprocessing_pipeline  
