@@ -1,0 +1,18 @@
+어제 얘기했었던 EEG data preprocessing 팁 공유함
+기본 pipeline은 여기 링크에서 참고했고 ( https://sccn.ucsd.edu/wiki/Makoto%27s_preprocessing_pipeline )
+순서는 아래와 같음
+
+1. Band-pass filtering (filtering 먼저해야 aliasing 방지, but EEGLAB의 필터링 함수쓰면 상관없음)
+2. Resampling if needed
+3. Use clean_rawdata() to reject bad channels and correct continuous data using Artifact Subspace Reconstruction (ASR): 파라미터에 따라 결과차이가 나므로 꼭 각 파라미터가 어떤것을 의미하는지 파악 필요, 첨부된 코드는 내가 쓰는 파라미터 기준으로 작성됨
+4. Interpolate all the removed channels (스텝 3에서 bad channel 을 reject 시키므로 interpolation 필요)
+5. Re-reference the data to average (CAR)
+6. ICA (링크에는 AMICA쓰라고 나와있는데 비교해본결과 기본ICA써도 무관)
+7. Automatic IC rejection using ICLabel 
+(ICLabel 툴박스를 이용하여 확률을 이용하여 자동으로 IC 리젝)
+
+이렇게 하면 대량의 데이터를 거의 자동으로 preprocessing 가능
+이후에 epoching 하여 각 bad trial을 visual insepction으로 봐서 제거하면 더 좋음 but 귀찮음
+
+첨부된 .m 파일 참고하여 데이터 돌려보면 좋을듯
+자세한 설명은  https://sccn.ucsd.edu/wiki/Makoto%27s_preprocessing_pipeline  링크참조하면 더  잘알수있음 ㅋ 전문가가 설명 잘 해놓음
