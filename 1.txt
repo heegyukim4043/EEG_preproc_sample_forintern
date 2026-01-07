@@ -1,4 +1,4 @@
-어제 얘기했었던 EEG data preprocessing 팁 공유함
+EEG data preprocessing 팁 공유함
 기본 pipeline은 여기 링크에서 참고했고 ( https://sccn.ucsd.edu/wiki/Makoto%27s_preprocessing_pipeline )
 순서는 아래와 같음
 
@@ -17,3 +17,4 @@
 첨부된 .m 파일 참고하여 데이터 돌려보면 좋을듯
 
 자세한 설명은  https://sccn.ucsd.edu/wiki/Makoto%27s_preprocessing_pipeline  
+
