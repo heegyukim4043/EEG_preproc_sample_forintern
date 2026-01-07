@@ -11,7 +11,7 @@ Delorme A & Makeig S (2004) EEGLAB: an open-source toolbox for analysis of singl
 
 Oostenveld, R., Fries, P., Maris, E., Schoffelen, JM (2011). FieldTrip: Open Source Software for Advanced Analysis of MEG, EEG, and Invasive Electrophysiological Data. Computational Intelligence and Neuroscience, Volume 2011 (2011)
 
-or download at 
+or downloaded at 
     
     https://drive.google.com/file/d/1dtdK0beP9IM-Cbe8E0AekRaN0l-0q62q/view?usp=sharing
     
